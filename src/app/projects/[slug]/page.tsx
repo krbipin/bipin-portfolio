@@ -67,9 +67,9 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       <div className="mb-8">
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-400 hover:text-white transition-colors group"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-sm font-semibold text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all group active:scale-[0.98]"
         >
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          <ArrowLeft className="w-4 h-4 text-zinc-400 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Projects</span>
         </Link>
       </div>
@@ -106,9 +106,9 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm transition-all active:scale-[0.98]"
             >
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="w-4 h-4 text-zinc-300" />
               <span>Launch Live Application</span>
             </a>
           )}
@@ -117,9 +117,9 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
           >
-            <GithubIcon className="w-4 h-4" />
+            <GithubIcon className="w-4 h-4 text-zinc-300" />
             <span>View Source Code (GitHub)</span>
           </a>
         </div>
@@ -173,7 +173,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
         <div className="space-y-4">
           {project.architecture.map((step, idx) => (
             <div key={idx} className="flex items-start gap-3.5 text-sm text-zinc-300">
-              <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+              <span className="w-6 h-6 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                 {idx + 1}
               </span>
               <p className="leading-relaxed">{step}</p>
@@ -250,17 +250,17 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       </div>
 
       {/* FOOTER NAVIGATION */}
-      <div className="mt-14 pt-8 border-t border-white/[0.08] flex items-center justify-between">
+      <div className="mt-14 pt-8 border-t border-white/[0.08] flex items-center justify-between gap-4">
         <Link
           href="/projects"
-          className="text-sm font-semibold text-zinc-400 hover:text-white transition-colors"
+          className="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-zinc-300 hover:text-white bg-zinc-900 hover:bg-zinc-850 border border-zinc-750 hover:border-zinc-650 transition-all active:scale-[0.98]"
         >
           ← All Projects
         </Link>
 
         <Link
           href={`/projects/${nextProject.slug}`}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-850 border border-zinc-750 hover:border-zinc-650 transition-all active:scale-[0.98]"
         >
           <span>Switch Project: {nextProject.title}</span>
           <span>→</span>

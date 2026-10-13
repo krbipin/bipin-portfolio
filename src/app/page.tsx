@@ -85,26 +85,26 @@ export default function HomePage() {
             href="/resume"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
-            <FileText className="w-4 h-4" />
+            <FileText className="w-4 h-4 text-zinc-300" />
             <span>View Resume (PDF)</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+            <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
           </a>
 
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 hover:border-zinc-700 transition-all hover:scale-[1.02]"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>Explore Projects</span>
-            <ArrowRight className="w-4 h-4 text-indigo-400" />
+            <ArrowRight className="w-4 h-4 text-zinc-400" />
           </Link>
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 hover:border-zinc-700 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            <Mail className="w-4 h-4 text-indigo-400" />
+            <Mail className="w-4 h-4 text-zinc-400" />
             <span>Contact Hub</span>
           </Link>
         </div>
@@ -145,10 +145,10 @@ export default function HomePage() {
 
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors group shrink-0"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all group shrink-0 active:scale-[0.98]"
           >
             <span>View Case Studies</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
@@ -177,10 +177,10 @@ export default function HomePage() {
 
           <Link
             href="/experience"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors group shrink-0"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all group shrink-0 active:scale-[0.98]"
           >
             <span>View All Credentials</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
@@ -279,19 +279,19 @@ export default function HomePage() {
         <div className="text-center mt-8">
           <Link
             href="/skills"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-300 hover:text-white px-5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-200 hover:text-white px-5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
           >
             <span>Explore All 30+ Skills & Tooling</span>
-            <ArrowRight className="w-4 h-4 text-indigo-400" />
+            <ArrowRight className="w-4 h-4 text-zinc-400" />
           </Link>
         </div>
       </section>
 
       {/* RECRUITER CTA BANNER */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <div className="relative rounded-3xl p-8 sm:p-12 overflow-hidden border border-white/[0.08] bg-[#0c0c12] text-center">
+        <div className="relative rounded-3xl p-8 sm:p-12 overflow-hidden border border-zinc-800 bg-[#0c0c12] text-center">
           <div className="relative z-10 max-w-2xl mx-auto">
-            <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400">
+            <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
               Recruiter Quick Action
             </span>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight mt-2 leading-tight">
@@ -307,18 +307,18 @@ export default function HomePage() {
                 href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm transition-all active:scale-[0.98]"
               >
-                <FileText className="w-4 h-4" />
+                <FileText className="w-4 h-4 text-zinc-300" />
                 <span>View Resume (PDF)</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
               </a>
 
               <a
                 href={PERSONAL_INFO.social.email}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
               >
-                <Mail className="w-4 h-4 text-indigo-400" />
+                <Mail className="w-4 h-4 text-zinc-400" />
                 <span>Email Bipin</span>
               </a>
 
@@ -326,9 +326,9 @@ export default function HomePage() {
                 href={PERSONAL_INFO.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
               >
-                <LinkedinIcon className="w-4 h-4 text-indigo-400" />
+                <LinkedinIcon className="w-4 h-4 text-zinc-400" />
                 <span>LinkedIn</span>
               </a>
             </div>

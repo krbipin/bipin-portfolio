@@ -47,11 +47,11 @@ export function ExperienceCard({ exp }: { exp: Experience }) {
             href={exp.credentialUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-indigo-300 bg-indigo-950/60 border border-indigo-700/50 hover:bg-indigo-900/60 hover:text-white transition-all shadow-sm"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all shadow-sm active:scale-[0.98]"
           >
-            <Award className="w-3.5 h-3.5 text-indigo-400" />
+            <Award className="w-3.5 h-3.5 text-zinc-400" />
             <span>Verify Credential</span>
-            <ExternalLink className="w-3 h-3 opacity-80" />
+            <ExternalLink className="w-3 h-3 text-zinc-400" />
           </a>
         </div>
       </div>

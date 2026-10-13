@@ -65,10 +65,10 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between gap-3">
         <Link
           href={`/projects/${project.slug}`}
-          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 border border-indigo-500/40 px-4 py-2 rounded-xl transition-all shadow-sm active:scale-[0.98]"
+          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 px-4 py-2 rounded-xl transition-all shadow-sm active:scale-[0.98]"
         >
           <span>Read Case Study</span>
-          <ArrowUpRight className="w-4 h-4" />
+          <ArrowUpRight className="w-4 h-4 text-zinc-300" />
         </Link>
 
         <div className="flex items-center gap-2">
@@ -78,10 +78,10 @@ export function ProjectCard({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Live Demo for ${project.title}`}
-              className="p-2.5 rounded-xl bg-zinc-900 hover:bg-indigo-950/60 text-zinc-300 hover:text-indigo-300 border border-zinc-800 hover:border-indigo-700/50 transition-colors"
+              className="p-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.95]"
               title="Visit Live Application"
             >
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="w-4 h-4 text-zinc-300" />
             </a>
           )}
           <a
@@ -89,7 +89,7 @@ export function ProjectCard({ project }: { project: Project }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`GitHub source for ${project.title}`}
-            className="p-2.5 rounded-xl bg-zinc-900 hover:bg-indigo-950/60 text-zinc-300 hover:text-indigo-300 border border-zinc-800 hover:border-indigo-700/50 transition-colors"
+            className="p-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.95]"
             title="Inspect Source Code"
           >
             <GithubIcon className="w-4 h-4" />

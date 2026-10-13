@@ -20,15 +20,15 @@ export function Footer() {
           {/* Col 1 & 2: Brand & Recruiter Summary */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600 p-[1px] flex items-center justify-center shadow-sm">
+              <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 p-[1px] flex items-center justify-center shadow-sm group-hover:border-zinc-600 transition-colors">
                 <div className="w-full h-full bg-[#050508] rounded-[7px] flex items-center justify-center">
-                  <span className="font-extrabold text-xs text-indigo-400 font-heading">
+                  <span className="font-extrabold text-xs text-zinc-200 font-heading">
                     BK
                   </span>
                 </div>
               </div>
               <span className="font-heading font-bold text-xl text-white tracking-tight">
-                Bipin Kumar<span className="text-indigo-400">.</span>
+                Bipin Kumar<span className="text-zinc-400">.</span>
               </span>
             </Link>
 
@@ -58,7 +58,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-850 text-zinc-400 hover:text-white flex items-center justify-center transition-all"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-750 hover:border-zinc-600 hover:bg-zinc-800 text-zinc-400 hover:text-white flex items-center justify-center transition-all active:scale-[0.95]"
               >
                 <GithubIcon className="w-4 h-4" />
               </a>
@@ -67,14 +67,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-850 text-zinc-400 hover:text-white flex items-center justify-center transition-all"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-750 hover:border-zinc-600 hover:bg-zinc-800 text-zinc-400 hover:text-white flex items-center justify-center transition-all active:scale-[0.95]"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
                 href={PERSONAL_INFO.social.email}
                 aria-label="Send direct email"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-850 text-zinc-400 hover:text-white flex items-center justify-center transition-all"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-750 hover:border-zinc-600 hover:bg-zinc-800 text-zinc-400 hover:text-white flex items-center justify-center transition-all active:scale-[0.95]"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -83,9 +83,9 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View Resume PDF"
-                className="px-3 py-1.5 rounded-lg bg-indigo-600/20 border border-indigo-500/30 text-indigo-300 hover:text-white hover:bg-indigo-600/30 flex items-center gap-1.5 text-xs font-semibold transition-all"
+                className="px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-750 hover:border-zinc-600 hover:bg-zinc-800 text-zinc-200 hover:text-white flex items-center gap-1.5 text-xs font-semibold transition-all active:scale-[0.95]"
               >
-                <FileText className="w-3.5 h-3.5" />
+                <FileText className="w-3.5 h-3.5 text-zinc-300" />
                 <span>Resume PDF</span>
               </a>
             </div>
@@ -147,7 +147,7 @@ export function Footer() {
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group"
                 >
                   <span>FacilityOps AI Platform</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400" />
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-zinc-300" />
                 </Link>
               </li>
               <li>
@@ -156,7 +156,7 @@ export function Footer() {
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group"
                 >
                   <span>SwasthyaAI Predictor</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400" />
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-zinc-300" />
                 </Link>
               </li>
             </ul>
@@ -169,7 +169,7 @@ export function Footer() {
             </h4>
             <div className="space-y-3 text-xs text-zinc-400">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="text-zinc-200 font-semibold">Current Location</p>
                   <p>Jaipur, Rajasthan, India</p>
@@ -177,24 +177,24 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="text-zinc-200 font-semibold">Origin Roots</p>
                   <p>Muzaffarpur, Bihar, India</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2 pt-1 border-t border-white/[0.08]">
-                <GraduationCap className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2 pt-1 border-t border-zinc-800">
+                <GraduationCap className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
                 <div>
                   <a
                     href={PERSONAL_INFO.university.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-200 hover:text-indigo-400 font-semibold flex items-center gap-1 transition-colors"
+                    className="text-zinc-200 hover:text-white font-semibold flex items-center gap-1 transition-colors"
                   >
                     <span>Jagannath University</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3 h-3 text-zinc-400" />
                   </a>
                   <p>B.Tech CSE (2023 – 2027)</p>
                 </div>

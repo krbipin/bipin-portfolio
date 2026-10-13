@@ -11,11 +11,11 @@ export default function SkillsPage() {
   const getLevelBadge = (level: "Advanced" | "Proficient" | "Familiar") => {
     switch (level) {
       case "Advanced":
-        return "bg-indigo-500/15 text-indigo-200 border-indigo-500/30";
+        return "bg-zinc-800 text-zinc-100 border-zinc-700 font-semibold";
       case "Proficient":
-        return "bg-white/[0.04] text-slate-300 border-white/[0.08]";
+        return "bg-zinc-900 text-zinc-300 border-zinc-800";
       default:
-        return "bg-white/[0.02] text-slate-400 border-white/[0.05]";
+        return "bg-zinc-950/80 text-zinc-400 border-zinc-850";
     }
   };
 
@@ -30,7 +30,7 @@ export default function SkillsPage() {
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Technical <span className="gradient-text-primary">Skills Matrix</span>
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-400 leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-zinc-400 leading-relaxed">
           A structured breakdown of languages, frameworks, AI agent libraries, and engineering tools
           applied across my production projects and research pipelines.
         </p>
@@ -41,7 +41,7 @@ export default function SkillsPage() {
         {SKILL_CATEGORIES.map((cat, idx) => (
           <div
             key={idx}
-            className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08] hover:border-indigo-500/30 transition-all flex flex-col justify-between"
+            className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08] hover:border-zinc-700 transition-all flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center gap-2 mb-3">
@@ -50,7 +50,7 @@ export default function SkillsPage() {
                   {cat.title}
                 </h3>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed mb-6">
+              <p className="text-xs text-zinc-400 leading-relaxed mb-6">
                 {cat.description}
               </p>
 
@@ -58,9 +58,9 @@ export default function SkillsPage() {
                 {cat.skills.map((skill, sIdx) => (
                   <div
                     key={sIdx}
-                    className="p-2.5 rounded-xl bg-white/[0.02] border border-white/[0.05] flex items-center justify-between"
+                    className="p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800 flex items-center justify-between"
                   >
-                    <span className="text-sm font-medium text-slate-200">
+                    <span className="text-sm font-medium text-zinc-200">
                       {skill.name}
                     </span>
                     <span

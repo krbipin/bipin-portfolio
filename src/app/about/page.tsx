@@ -30,7 +30,7 @@ export default function AboutPage() {
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Engineering Intelligence from <span className="gradient-text-primary">First Principles</span>
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-zinc-300 leading-relaxed">
           The story, technical philosophy, and driving ambitions behind my work in Data Science,
           Machine Learning, and Autonomous Agent Systems.
         </p>
@@ -40,7 +40,7 @@ export default function AboutPage() {
         {/* Left Column: Profile Card & Quick Facts */}
         <div className="lg:col-span-5 space-y-6">
           <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/[0.08] text-center">
-            <div className="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-2 border-indigo-500/40 p-1 bg-slate-900 shadow-xl">
+            <div className="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-2 border-indigo-500/40 p-1 bg-zinc-900 shadow-xl">
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
                   src="/profile.jpg"
@@ -57,7 +57,7 @@ export default function AboutPage() {
               Data Science & AI/ML Engineer
             </p>
 
-            <div className="mt-6 pt-6 border-t border-white/[0.06] space-y-3.5 text-left text-xs sm:text-sm text-slate-300">
+            <div className="mt-6 pt-6 border-t border-white/[0.06] space-y-3.5 text-left text-xs sm:text-sm text-zinc-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
                 <div>
@@ -79,28 +79,28 @@ export default function AboutPage() {
                 <div>
                   <span className="font-semibold text-white block">Education:</span>
                   Jagannath University, Jaipur
-                  <span className="block text-slate-400 text-xs mt-0.5">
+                  <span className="block text-zinc-400 text-xs mt-0.5">
                     B.Tech CSE (2023 – 2027) • CGPA: 7.4
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/[0.06] flex flex-col gap-2.5">
+            <div className="mt-8 pt-6 border-t border-zinc-800 flex flex-col gap-2.5">
               <a
                 href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/20 transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm transition-all active:scale-[0.98]"
               >
-                <FileText className="w-4 h-4" />
+                <FileText className="w-4 h-4 text-zinc-300" />
                 <span>Open Resume PDF</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
               </a>
 
               <Link
                 href="/contact"
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-300 bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-650 transition-all active:scale-[0.98]"
               >
                 <span>Initiate Contact</span>
               </Link>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               <BrainCircuit className="w-5 h-5 text-indigo-400" />
               <span>Who I Am & What I Build</span>
             </h3>
-            <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <div className="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
               <p>
                 Originally from <strong>Muzaffarpur, Bihar</strong>, I relocated to{" "}
                 <strong>Jaipur, Rajasthan</strong> to pursue my Bachelor of Technology in Computer
@@ -154,28 +154,28 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <h4 className="font-semibold text-white text-sm">1. Zero-Mock Reality</h4>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-zinc-400 mt-1">
                   Every pipeline handles live streaming data, edge-case nulls, and real databases rather than hardcoded static mockups.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <h4 className="font-semibold text-white text-sm">2. Latency & Efficiency</h4>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-zinc-400 mt-1">
                   Optimizing inference via ONNX quantization, efficient feature normalization, and asynchronous API handling.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <h4 className="font-semibold text-white text-sm">3. Verified Credentials</h4>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-zinc-400 mt-1">
                   Endorsed through AICTE and IBM SkillsBuild programs with verifiable IDs and measurable deliverables.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <h4 className="font-semibold text-white text-sm">4. Recruiter Transparency</h4>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-zinc-400 mt-1">
                   Clear documentation, public GitHub repositories, deployed live URLs, and instant PDF resume access.
                 </p>
               </div>
@@ -186,15 +186,15 @@ export default function AboutPage() {
           <div className="pt-2 flex flex-wrap items-center gap-4">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/20 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm transition-all active:scale-[0.98]"
             >
               <span>Explore Deployed Projects</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 text-zinc-400" />
             </Link>
 
             <Link
               href="/experience"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-300 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] transition-all"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-650 transition-all active:scale-[0.98]"
             >
               <span>Review Verified Credentials</span>
             </Link>

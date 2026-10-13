@@ -59,7 +59,7 @@ export default function ContactPage() {
             <button
               onClick={handleCopyEmail}
               type="button"
-              className="px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 text-xs font-semibold flex items-center gap-1.5 transition-colors shrink-0"
+              className="px-3 py-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-750 hover:border-zinc-600 text-xs font-semibold flex items-center gap-1.5 transition-all shrink-0 active:scale-[0.95]"
               title="Copy email to clipboard"
             >
               {copied ? (
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 </>
               ) : (
                 <>
-                  <Copy className="w-3.5 h-3.5" />
+                  <Copy className="w-3.5 h-3.5 text-zinc-400" />
                   <span>Copy</span>
                 </>
               )}
@@ -79,9 +79,9 @@ export default function ContactPage() {
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href={PERSONAL_INFO.social.email}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 shadow-sm transition-all active:scale-[0.98]"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4 text-zinc-300" />
               <span>Launch Mail Client</span>
             </a>
 
@@ -89,11 +89,11 @@ export default function ContactPage() {
               href="/resume"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
             >
-              <FileText className="w-4 h-4 text-indigo-400" />
+              <FileText className="w-4 h-4 text-zinc-300" />
               <span>View Resume (PDF)</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+              <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
             </a>
           </div>
         </div>
@@ -110,32 +110,32 @@ export default function ContactPage() {
               href={PERSONAL_INFO.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-indigo-500/40 flex items-center justify-between group transition-all"
+              className="p-3.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between group transition-all"
             >
               <div className="flex items-center gap-3">
-                <LinkedinIcon className="w-5 h-5 text-indigo-400" />
+                <LinkedinIcon className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors" />
                 <div>
                   <span className="text-sm font-semibold text-white block">LinkedIn</span>
                   <span className="text-xs text-zinc-400">linkedin.com/in/bipinkr</span>
                 </div>
               </div>
-              <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 transition-colors" />
+              <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-zinc-300 transition-colors" />
             </a>
 
             <a
               href={PERSONAL_INFO.social.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-indigo-500/40 flex items-center justify-between group transition-all"
+              className="p-3.5 rounded-xl bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between group transition-all"
             >
               <div className="flex items-center gap-3">
-                <GithubIcon className="w-5 h-5 text-indigo-400" />
+                <GithubIcon className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors" />
                 <div>
                   <span className="text-sm font-semibold text-white block">GitHub</span>
                   <span className="text-xs text-zinc-400">github.com/krbipin</span>
                 </div>
               </div>
-              <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-indigo-400 transition-colors" />
+              <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-zinc-300 transition-colors" />
             </a>
           </div>
 
