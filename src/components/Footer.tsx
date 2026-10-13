@@ -4,7 +4,6 @@ import {
   FileText,
   MapPin,
   GraduationCap,
-  Sparkles,
   ArrowUpRight,
   ExternalLink,
 } from "lucide-react";
@@ -15,24 +14,21 @@ export function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="w-full border-t border-white/[0.08] bg-[#05070c] relative overflow-hidden">
-      {/* Subtle background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-b from-indigo-500/10 to-transparent blur-3xl pointer-events-none" />
-
+    <footer className="w-full border-t border-white/[0.08] bg-[#06080d] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Col 1 & 2: Brand & Recruiter Summary */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 p-[1px] flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <div className="w-full h-full bg-[#07090e] rounded-[7px] flex items-center justify-center">
-                  <span className="font-extrabold text-sm text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
+              <div className="w-8 h-8 rounded-lg bg-indigo-600 p-[1px] flex items-center justify-center shadow-md shadow-indigo-600/20">
+                <div className="w-full h-full bg-[#080b11] rounded-[7px] flex items-center justify-center">
+                  <span className="font-extrabold text-sm text-indigo-400">
                     BK
                   </span>
                 </div>
               </div>
               <span className="font-bold text-xl text-white tracking-tight">
-                Bipin Kumar<span className="text-cyan-400">.</span>
+                Bipin Kumar<span className="text-indigo-400">.</span>
               </span>
             </Link>
 
@@ -42,16 +38,16 @@ export function Footer() {
             </p>
 
             <div className="pt-2 flex flex-wrap gap-2 text-xs">
-              <span className="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+              <span className="px-2.5 py-1 rounded-md bg-white/[0.03] text-slate-300 border border-white/[0.06]">
                 Data Science
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+              <span className="px-2.5 py-1 rounded-md bg-white/[0.03] text-slate-300 border border-white/[0.06]">
                 AI/ML Engineer
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+              <span className="px-2.5 py-1 rounded-md bg-white/[0.03] text-slate-300 border border-white/[0.06]">
                 Data Analytics
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20">
+              <span className="px-2.5 py-1 rounded-md bg-white/[0.03] text-slate-300 border border-white/[0.06]">
                 AI Integration
               </span>
             </div>
@@ -71,14 +67,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] hover:border-cyan-500/40 hover:bg-cyan-500/10 text-slate-400 hover:text-white flex items-center justify-center transition-all"
+                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] hover:border-indigo-500/40 hover:bg-indigo-500/10 text-slate-400 hover:text-white flex items-center justify-center transition-all"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
                 href={PERSONAL_INFO.social.email}
                 aria-label="Send direct email"
-                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] hover:border-emerald-500/40 hover:bg-emerald-500/10 text-slate-400 hover:text-white flex items-center justify-center transition-all"
+                className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.08] hover:border-indigo-500/40 hover:bg-indigo-500/10 text-slate-400 hover:text-white flex items-center justify-center transition-all"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -97,7 +93,7 @@ export function Footer() {
 
           {/* Col 3: Navigation */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wider">
+            <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
               Navigation
             </h4>
             <ul className="space-y-2 text-sm">
@@ -139,9 +135,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Featured Case Studies */}
+          {/* Col 4: Featured Case Studies (Only the 2 User Projects) */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wider">
+            <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
               Project Case Studies
             </h4>
             <ul className="space-y-2 text-sm">
@@ -150,8 +146,8 @@ export function Footer() {
                   href="/projects/facilityops-ai"
                   className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
                 >
-                  <span>FacilityOps AI</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span>FacilityOps AI Platform</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400" />
                 </Link>
               </li>
               <li>
@@ -160,43 +156,7 @@ export function Footer() {
                   className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
                 >
                   <span>SwasthyaAI Predictor</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects/rag-document-qa"
-                  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
-                >
-                  <span>RAG Document Q&A</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects/movie-recommender"
-                  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
-                >
-                  <span>Movie Recommender</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects/churn-predictor"
-                  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
-                >
-                  <span>Customer Churn ML</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects/sentiment-analyzer"
-                  className="text-slate-400 hover:text-white transition-colors flex items-center gap-1 group"
-                >
-                  <span>BERT Sentiment Pipeline</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400" />
                 </Link>
               </li>
             </ul>
@@ -204,12 +164,12 @@ export function Footer() {
 
           {/* Col 5: Location & University */}
           <div className="space-y-4">
-            <h4 className="text-xs font-bold text-slate-200 uppercase tracking-wider">
+            <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
               Location & Campus
             </h4>
             <div className="space-y-3 text-xs text-slate-400">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="text-slate-200 font-semibold">Current Location</p>
                   <p>Jaipur, Rajasthan, India</p>
@@ -225,13 +185,13 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-2 pt-1 border-t border-white/[0.06]">
-                <GraduationCap className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <GraduationCap className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
                 <div>
                   <a
                     href={PERSONAL_INFO.university.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-slate-200 hover:text-emerald-400 font-semibold flex items-center gap-1 transition-colors"
+                    className="text-slate-200 hover:text-indigo-400 font-semibold flex items-center gap-1 transition-colors"
                   >
                     <span>Jagannath University</span>
                     <ExternalLink className="w-3 h-3" />
@@ -251,14 +211,14 @@ export function Footer() {
               href="/resume"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-cyan-400 transition-colors flex items-center gap-1"
+              className="text-slate-400 hover:text-indigo-300 transition-colors flex items-center gap-1"
             >
               <span>View Resume</span>
               <ExternalLink className="w-3 h-3" />
             </a>
             <span>•</span>
-            <Link href="/contact" className="text-slate-400 hover:text-indigo-400 transition-colors">
-              Contact Me
+            <Link href="/contact" className="text-slate-400 hover:text-indigo-300 transition-colors">
+              Contact Hub
             </Link>
           </div>
         </div>

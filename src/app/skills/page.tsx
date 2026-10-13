@@ -1,4 +1,4 @@
-import { Cpu, Bot, BarChart3, Database, Code2, Sparkles, CheckCircle2 } from "lucide-react";
+import { Cpu } from "lucide-react";
 import { SKILL_CATEGORIES } from "@/data/portfolio-data";
 
 export const metadata = {
@@ -11,11 +11,11 @@ export default function SkillsPage() {
   const getLevelBadge = (level: "Advanced" | "Proficient" | "Familiar") => {
     switch (level) {
       case "Advanced":
-        return "bg-emerald-500/10 text-emerald-300 border-emerald-500/30";
+        return "bg-indigo-500/15 text-indigo-200 border-indigo-500/30";
       case "Proficient":
-        return "bg-indigo-500/10 text-indigo-300 border-indigo-500/30";
+        return "bg-white/[0.04] text-slate-300 border-white/[0.08]";
       default:
-        return "bg-cyan-500/10 text-cyan-300 border-cyan-500/30";
+        return "bg-white/[0.02] text-slate-400 border-white/[0.05]";
     }
   };
 
@@ -23,14 +23,14 @@ export default function SkillsPage() {
     <div className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Header section */}
       <div className="max-w-3xl mb-12 sm:mb-16">
-        <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">
+        <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-2">
           <Cpu className="w-3.5 h-3.5" />
           <span>Core Competencies</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Technical <span className="gradient-text-emerald">Skills Matrix</span>
+          Technical <span className="gradient-text-primary">Skills Matrix</span>
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-slate-400 leading-relaxed">
           A structured breakdown of languages, frameworks, AI agent libraries, and engineering tools
           applied across my production projects and research pipelines.
         </p>
@@ -45,7 +45,7 @@ export default function SkillsPage() {
           >
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-sm" />
+                <span className="w-2 h-2 rounded-full bg-indigo-400" />
                 <h3 className="text-lg font-bold text-white tracking-tight">
                   {cat.title}
                 </h3>

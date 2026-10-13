@@ -18,7 +18,7 @@
 - Full-Stack & APIs: FastAPI, React.js, Next.js (App Router), Node.js, Express.js, Tailwind CSS, Streamlit.
 - Databases & Infrastructure: PostgreSQL (Neon), MongoDB Atlas, SQLAlchemy 2, Docker, Git/GitHub, Vercel, Render.
 
-## 3. Flagship Projects In-Depth
+## 3. Flagship Production Platforms
 ### Project 1: Agentic FacilityOps AI Platform
 - Live URL: https://facilityops-platform.vercel.app/
 - Source Code: https://github.com/krbipin/Agentic-FacilityOps-AI-Platform
@@ -32,22 +32,6 @@
 - Source Code: https://github.com/krbipin/diabetes-predictor
 - Architecture: Public health diagnostic machine learning tool trained on 8 clinical features (pregnancies, glucose, blood pressure, skin thickness, insulin, BMI, pedigree function, age).
 - Implementation: Standardized scaling pipeline with serialized (.sav) models running with <150ms inference on Streamlit.
-
-### Project 3: RAG-Powered Document Q&A System
-- Vector Store: ChromaDB with HNSW indexing and Sentence Transformers embeddings.
-- Pipeline: Sub-300ms retrieval-augmented generation powered by Groq LLM with strict context grounding.
-
-### Project 4: Hybrid Movie Recommendation System
-- Algorithms: Hybrid collaborative filtering (Truncated SVD matrix factorization) + content-based filtering (TF-IDF cosine similarity) on MovieLens 1M dataset.
-- Evaluation: Achieved 0.87 RMSE.
-
-### Project 5: Customer Churn Prediction Dashboard
-- Models: XGBoost classifier with SMOTE oversampling and TreeSHAP explainability.
-- Performance: 92% AUC-ROC score on telecom churn benchmark.
-
-### Project 6: Real-Time Sentiment Analysis Pipeline
-- Model: Fine-tuned BERT (bert-base-uncased) achieving 91% F1-score.
-- Acceleration: ONNX Runtime export providing 3x CPU inference speedup.
 
 ## 4. Verified Experience & Credentials
 1. 1M1B (One Million for One Billion) × AICTE × IBM SkillsBuild: AI for Sustainability Virtual Internship (Jul 2026 – Sep 2026). Credential ID: INTERNSHIP_17828984086a44dee80acf6.

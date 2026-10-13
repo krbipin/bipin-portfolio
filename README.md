@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS_v4-38bdf8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
-Production portfolio web application for **Bipin Kumar**, Data Science & AI/ML Engineer. Built with **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS**, designed with an obsidian dark aesthetic, sub-second latency, zero layout shift, clean routing without hash fragments, direct native browser PDF resume streaming, and 4/4 Agentic Browsing (SEO, AEO, GEO, LLMO, and JSON-LD schema graphs).
+Production portfolio web application for **Bipin Kumar**, Data Science & AI/ML Engineer. Built with **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS**, designed with an executive dark aesthetic, sub-second latency, zero layout shift, clean routing without hash fragments, direct native browser PDF resume streaming, and 4/4 Agentic Browsing (SEO, AEO, GEO, LLMO, and JSON-LD schema graphs).
 
 ---
 
@@ -15,13 +15,13 @@ Production portfolio web application for **Bipin Kumar**, Data Science & AI/ML E
 - **Direct Resume Stream (`/resume`)**: Instant inline PDF streaming with `Content-Disposition: inline` so any browser natively opens the document without force-downloading or landing on blank wrappers.
 - **Unified Experience & Verified Credentials (`/experience`)**: Consolidates 1M1B AI for Sustainability, Edunet AI, CodeWithHarry, and Udemy experiences with verified AICTE & IBM IDs and direct Google Drive credentials.
 - **Clean URL Architecture**: Zero `#` anchor fragments. Dedicated clean routes for `/`, `/about`, `/projects`, `/experience`, `/skills`, `/education`, and `/contact`.
-- **Project Case Studies (`/projects/[slug]`)**: In-depth architecture diagrams, mathematical/ML models, metrics, and live demo buttons for 6 projects.
+- **In-Depth Case Studies (`/projects/[slug]`)**: Architecture diagrams, ML pipelines, metrics, and live demo buttons for both flagship projects.
 - **Privacy First**: Strictly zero phone number leaks across all pages.
 - **Agentic & AI Search Optimization**: Complete JSON-LD schemas (`Person`, `SoftwareApplication`, `FAQPage`), `public/llms.txt`, `public/llms-full.txt`, dynamic `sitemap.xml`, and `robots.txt`.
 
 ---
 
-## 🚀 Projects Included
+## 🚀 Flagship Deployed Platforms
 
 1. **[Agentic FacilityOps AI Platform](https://facilityops-platform.vercel.app/)**
    - Autonomous multi-agent building intelligence system monitoring energy, maintenance, occupancy, security, and cost metrics with 1-minute streaming telemetry.
@@ -32,18 +32,6 @@ Production portfolio web application for **Bipin Kumar**, Data Science & AI/ML E
    - Healthcare machine learning diagnostic system evaluating 8 clinical biometric parameters with zero-latency inference.
    - Stack: Python, Scikit-learn, Streamlit, NumPy, StandardScaler.
    - GitHub: [krbipin/diabetes-predictor](https://github.com/krbipin/diabetes-predictor)
-
-3. **RAG-Powered Document Q&A System**
-   - Semantic retrieval and conversational question-answering pipeline using LangChain, ChromaDB vector search, Sentence Transformers, and Groq LLM under <300ms.
-
-4. **Hybrid Movie Recommendation System**
-   - SVD matrix factorization + TF-IDF cosine similarity on MovieLens 1M dataset, achieving 0.87 RMSE.
-
-5. **Customer Churn Prediction Dashboard**
-   - XGBoost classifier with SMOTE oversampling, TreeSHAP explainability, and 92% AUC-ROC score.
-
-6. **Real-Time Sentiment Analysis Pipeline**
-   - Fine-tuned BERT (bert-base-uncased) with ONNX Runtime acceleration delivering 3x CPU inference speedup and 91% F1-score.
 
 ---
 

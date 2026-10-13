@@ -2,17 +2,17 @@
 
 @layer base {
   :root {
-    --background: #07090e;
-    --foreground: #f3f4f6;
-    --card: #0d111a;
-    --card-foreground: #f3f4f6;
+    --background: #080b11;
+    --foreground: #f8fafc;
+    --card: #0d121d;
+    --card-foreground: #f8fafc;
     --primary: #6366f1;
     --primary-foreground: #ffffff;
-    --secondary: #131926;
-    --secondary-foreground: #9ca3af;
-    --muted: #1e2536;
+    --secondary: #141b2b;
+    --secondary-foreground: #94a3b8;
+    --muted: #1e293b;
     --muted-foreground: #94a3b8;
-    --accent: #06b6d4;
+    --accent: #4f46e5;
     --accent-foreground: #ffffff;
     --border: #1e293b;
     --ring: #6366f1;
@@ -29,11 +29,11 @@ body {
 
 /* Custom scrollbars */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #07090e;
+  background: #080b11;
 }
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
@@ -43,30 +43,30 @@ body {
   background: #334155;
 }
 
-/* Glassmorphism utility */
+/* Glassmorphism utility - Clean, subtle, professional */
 .glass-panel {
-  background: rgba(13, 17, 26, 0.7);
+  background: rgba(13, 18, 29, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .glass-card {
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(13, 18, 29, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s ease;
 }
 
 .glass-card:hover {
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.75);
   border-color: rgba(99, 102, 241, 0.3);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
 }
 
-/* Gradient text utility */
+/* Standardized, unified typography gradients */
 .gradient-text {
   background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
   -webkit-background-clip: text;
@@ -74,26 +74,7 @@ body {
 }
 
 .gradient-text-primary {
-  background: linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 40%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.gradient-text-emerald {
-  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Grid & Dots backgrounds */
-.bg-grid-pattern {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-}
-
-.bg-dot-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 24px 24px;
 }

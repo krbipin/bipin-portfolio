@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   subtitle: string;
   description: string;
-  category: "Agentic AI" | "Machine Learning" | "Deep Learning & NLP" | "Full-Stack AI";
+  category: string;
   featured: boolean;
   tags: string[];
   metrics: { label: string; value: string }[];
@@ -68,7 +68,7 @@ export const PERSONAL_INFO = {
     email: "mailto:bipinkumarkataroo6201@gmail.com",
   },
   stats: [
-    { label: "Production & ML Projects", value: "6+" },
+    { label: "Deployed Production Platforms", value: "2" },
     { label: "Verified Internships & Certifications", value: "4" },
     { label: "Inference Latency Reduction", value: "3x" },
     { label: "Core Technical Skills", value: "30+" },
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
     title: "Agentic FacilityOps AI Platform",
     subtitle: "Autonomous Multi-Agent Building Intelligence & Telemetry System",
     description: "Enterprise operations platform with autonomous AI agents continuously monitoring energy, maintenance, occupancy, security, and cost metrics with real-time 1-minute streaming telemetry.",
-    category: "Agentic AI",
+    category: "Autonomous Multi-Agent AI",
     featured: true,
     tags: ["Next.js 16", "FastAPI", "PostgreSQL (Neon)", "Scikit-Learn", "Pandas", "Groq LLM", "Clerk"],
     metrics: [
@@ -127,7 +127,7 @@ export const PROJECTS: Project[] = [
     title: "SwasthyaAI: Diabetes Risk Predictor",
     subtitle: "Healthcare Machine Learning Diagnostic & Risk Assessment System",
     description: "Interactive predictive health tool using Machine Learning to assess early diabetes risks from 8 clinical features, providing actionable insights for social awareness.",
-    category: "Machine Learning",
+    category: "Predictive Machine Learning",
     featured: true,
     tags: ["Python", "Scikit-learn", "Streamlit", "NumPy", "StandardScaler", "Pickle"],
     metrics: [
@@ -162,160 +162,6 @@ export const PROJECTS: Project[] = [
       "Reinforced preventive medical consultation for flagged individuals.",
     ],
   },
-  {
-    slug: "rag-document-qa",
-    title: "RAG-Powered Document Q&A System",
-    subtitle: "Retrieval-Augmented Generation Multi-Document Intelligence Engine",
-    description: "Enterprise semantic search and conversational question-answering pipeline ingesting multi-format corpora with ChromaDB vector search and Groq LLM inference under 300ms.",
-    category: "Agentic AI",
-    featured: true,
-    tags: ["LangChain", "ChromaDB", "Sentence Transformers", "FastAPI", "React", "Groq LLM"],
-    metrics: [
-      { label: "Query Latency", value: "<300ms" },
-      { label: "Vector Store", value: "ChromaDB" },
-      { label: "Embeddings", value: "Sentence Transformers" },
-      { label: "LLM Provider", value: "Groq Llama 3" },
-    ],
-    githubUrl: "https://github.com/krbipin",
-    overview: "Built an enterprise Retrieval-Augmented Generation (RAG) system capable of ingesting diverse unstructured documents (PDFs, DOCX, TXT) to deliver precise, citation-backed answers without hallucination.",
-    problem: "Standard large language models hallucinate on specialized internal documents and cannot access private organizational knowledge without costly retraining.",
-    solution: "Engineered a LangChain ingestion pipeline that chunks documents with recursive semantic splitting, generates dense embeddings with Sentence Transformers, and indexes them in ChromaDB. Queries retrieve top-k context vectors and feed a conditioned prompt to Groq LLM for verified answers.",
-    architecture: [
-      "Document pre-processor splits text into optimal 512-token chunks with 50-token overlaps.",
-      "Sentence Transformers model computes dense 384-dimensional vector embeddings.",
-      "ChromaDB indexes vectors with HNSW indexing for sub-millisecond similarity queries.",
-      "FastAPI orchestrates query routing, prompt synthesis, and conversation history in MongoDB.",
-      "React frontend provides real-time streaming answer generation and document upload preview.",
-    ],
-    keyFeatures: [
-      "Semantic Chunking & Deduplication: Prevents fragmented context loss.",
-      "Sub-300ms End-to-End Latency: Powered by Groq's high-throughput LPU inference.",
-      "Source Citation: Highlights exact document pages and excerpts supporting every answer.",
-      "Conversation History Memory: Retains multi-turn dialogue context securely.",
-    ],
-    techStack: [
-      { category: "AI & Vector", items: ["LangChain", "ChromaDB", "Sentence Transformers", "Groq API"] },
-      { category: "Full-Stack", items: ["FastAPI", "React.js", "MongoDB", "Tailwind CSS"] },
-    ],
-    impact: [
-      "Reduced research time across multi-page technical manuals from 45 minutes to seconds.",
-      "Zero observed hallucinations through strict context constraint prompting.",
-    ],
-  },
-  {
-    slug: "movie-recommender",
-    title: "Hybrid Movie Recommendation System",
-    subtitle: "Collaborative & Content-Based Filtering Personalization Engine",
-    description: "Hybrid recommendation platform combining SVD matrix factorization with TF-IDF cosine similarity on the MovieLens 1M dataset, achieving RMSE of 0.87.",
-    category: "Machine Learning",
-    featured: false,
-    tags: ["Scikit-learn", "Pandas", "SVD Factorization", "TF-IDF", "Express.js", "React"],
-    metrics: [
-      { label: "Evaluation RMSE", value: "0.87" },
-      { label: "Dataset Size", value: "1M Ratings" },
-      { label: "Filtering Mode", value: "Hybrid" },
-      { label: "Stack", value: "MERN + Python" },
-    ],
-    githubUrl: "https://github.com/krbipin",
-    overview: "Developed a hybrid recommendation platform that solves the cold-start problem and user preference drift by blending content-based semantic matching with collaborative behavioral signals.",
-    problem: "Single-paradigm recommenders fail: collaborative filtering suffers from cold-start problems on new items, while content-based filtering creates repetitive filter bubbles without serendipity.",
-    solution: "Engineered a weighted ensemble combining Truncated SVD matrix factorization on user-item interaction matrices with TF-IDF cosine similarity vectors across genres and plot metadata, evaluated on MovieLens 1M.",
-    architecture: [
-      "Preprocessing cleans and normalizes user rating distributions across 1 million entries.",
-      "SVD matrix factorization extracts latent feature vectors for users and movies.",
-      "TF-IDF vectorizer extracts text feature vectors from movie metadata.",
-      "Dynamic ensemble weight shifts recommendations based on user rating history depth.",
-      "Full-stack MERN interface presents movie cards, genre exploration, and dynamic rating feedback.",
-    ],
-    keyFeatures: [
-      "Hybrid Recommendation Engine: Automatic fallback to content matching for new users.",
-      "Fast Matrix Factorization: Offline precomputed latent vectors with real-time dot products.",
-      "Interactive React UI: Personalized movie shelves, watchlists, and search.",
-    ],
-    techStack: [
-      { category: "ML & Data", items: ["Python", "Scikit-learn", "Pandas", "NumPy", "SciPy"] },
-      { category: "Full-Stack", items: ["React.js", "Node.js", "Express.js", "MongoDB Atlas"] },
-    ],
-    impact: [
-      "Achieved a 0.87 RMSE on test holdouts, outperforming baseline collaborative models by 14%.",
-    ],
-  },
-  {
-    slug: "churn-predictor",
-    title: "Customer Churn Prediction Dashboard",
-    subtitle: "Explainable AI (XAI) & Telecom Customer Retention System",
-    description: "Predictive analytics pipeline with XGBoost classifier and SMOTE balancing, featuring SHAP value explainability and dual Streamlit + React operational dashboards.",
-    category: "Machine Learning",
-    featured: false,
-    tags: ["XGBoost", "SHAP", "SMOTE", "FastAPI", "Streamlit", "React"],
-    metrics: [
-      { label: "AUC-ROC Score", value: "92%" },
-      { label: "Class Balancing", value: "SMOTE" },
-      { label: "Explainability", value: "SHAP Values" },
-      { label: "Backend API", value: "FastAPI" },
-    ],
-    githubUrl: "https://github.com/krbipin",
-    overview: "A comprehensive telecom customer churn prediction platform that combines high-accuracy classification with transparent Explainable AI (XAI) to help retention teams take preemptive action.",
-    problem: "Customer acquisition in telecommunications costs 5x more than retention. When churn prediction models act as black boxes, retention teams cannot determine why a high-value customer is likely to leave.",
-    solution: "Trained an XGBoost classifier with SMOTE oversampling to resolve extreme class imbalance. Integrated TreeSHAP to generate per-customer feature attribution waterfalls, highlighting exact churn drivers like contract type, fiber optics tenure, and tech support tickets.",
-    architecture: [
-      "SMOTE balances churn ratio in telecom feature matrices.",
-      "XGBoost classifier trained with GridSearchCV hyperparameter tuning achieving 92% AUC-ROC.",
-      "SHAP explainer computes local and global feature attribution scores.",
-      "FastAPI endpoint delivers churn risk scores alongside top 3 driving negative features.",
-      "Dual interface: Streamlit for analytical exploration and React dashboard for operational teams.",
-    ],
-    keyFeatures: [
-      "Transparent Risk Breakdown: Displays which specific billing or service factors drive churn risk.",
-      "Real-Time Batch Scoring: Evaluates thousands of customer records concurrently.",
-      "Interactive Streamlit Simulator: What-if analysis testing retention discount scenarios.",
-    ],
-    techStack: [
-      { category: "Machine Learning", items: ["XGBoost", "SHAP", "Scikit-learn", "Imbalanced-Learn (SMOTE)"] },
-      { category: "Web & API", items: ["FastAPI", "Streamlit", "React.js", "MongoDB"] },
-    ],
-    impact: [
-      "Achieved 92% AUC-ROC, providing early warning signals 60 days before contract expiry.",
-    ],
-  },
-  {
-    slug: "sentiment-analyzer",
-    title: "Real-Time Sentiment Analysis Pipeline",
-    subtitle: "Fine-Tuned BERT NLP Model with ONNX Runtime Acceleration",
-    description: "Production deep learning sentiment classification pipeline utilizing fine-tuned BERT with ONNX Runtime acceleration, achieving 91% F1-score and 3x faster inference.",
-    category: "Deep Learning & NLP",
-    featured: false,
-    tags: ["PyTorch", "HuggingFace", "BERT", "ONNX Runtime", "Express", "React"],
-    metrics: [
-      { label: "Model F1-Score", value: "91%" },
-      { label: "Latency Speedup", value: "3x via ONNX" },
-      { label: "Base Architecture", value: "BERT-base" },
-      { label: "Serving Engine", value: "ONNX Runtime" },
-    ],
-    githubUrl: "https://github.com/krbipin",
-    overview: "A production-grade NLP service that classifies customer reviews and social media comments in real-time using a fine-tuned transformer model optimized for high-throughput serving.",
-    problem: "Standard BERT models are computationally heavy and have significant latency when deployed on standard CPU instances, making real-time user-facing analysis expensive and sluggish.",
-    solution: "Fine-tuned bert-base-uncased on paired review datasets to reach 91% F1-score, then converted the model graph to ONNX with graph optimizations and quantization, reducing latency by 3x on commodity servers.",
-    architecture: [
-      "Fine-tuned Hugging Face transformer model on GPU with PyTorch.",
-      "Exported model graph to ONNX and applied graph simplification and constant folding.",
-      "ONNX Runtime execution provider deployed on lightweight Python server.",
-      "Express.js gateway mediates requests, verifies tokens, and logs predictions in MongoDB.",
-      "React UI displays sentiment polarity gauges and historical sentiment trends.",
-    ],
-    keyFeatures: [
-      "3x Faster Inference: ONNX optimizations deliver sub-50ms CPU inferences.",
-      "Confidence Scores: Outputs multi-class probabilities (Positive, Neutral, Negative).",
-      "Historical Sentiment Tracking: Interactive sentiment timeline charts over time.",
-    ],
-    techStack: [
-      { category: "NLP & Deep Learning", items: ["PyTorch", "Hugging Face Transformers", "BERT", "ONNX Runtime"] },
-      { category: "Full-Stack", items: ["Node.js", "Express.js", "React.js", "MongoDB"] },
-    ],
-    impact: [
-      "Lowered cloud compute hosting costs by running optimized ONNX inferences on standard CPU instances.",
-    ],
-  },
 ];
 
 export const EXPERIENCES: Experience[] = [
@@ -337,7 +183,7 @@ export const EXPERIENCES: Experience[] = [
       "Awarded official Certificate of Completion issued on 22.09.2026 under AICTE Internship ID INTERNSHIP_17828984086a44dee80acf6.",
     ],
     skills: ["Agentic AI", "RAG Systems", "Responsible AI", "IBM SkillsBuild", "AICTE Standards", "Prompt Engineering"],
-    badgeColor: "emerald",
+    badgeColor: "indigo",
   },
   {
     id: "edunet-ibm-aicte",
@@ -375,7 +221,7 @@ export const EXPERIENCES: Experience[] = [
       "Built production-ready model deployment workflows with Python scripts and visualization dashboards.",
     ],
     skills: ["Data Science Lifecycle", "Feature Engineering", "Pandas", "Scikit-Learn", "Matplotlib", "Model Evaluation"],
-    badgeColor: "cyan",
+    badgeColor: "indigo",
   },
   {
     id: "udemy-python-bootcamp",
@@ -392,7 +238,7 @@ export const EXPERIENCES: Experience[] = [
       "Developed mini-projects for data manipulation, automated API calling, and ETL preprocessing for ML pipelines.",
     ],
     skills: ["Advanced Python", "Object-Oriented Programming", "Automation Scripts", "Data Structures", "ETL Processing"],
-    badgeColor: "violet",
+    badgeColor: "indigo",
   },
 ];
 
@@ -481,7 +327,7 @@ export const FAQS = [
   },
   {
     question: "What are Bipin Kumar's flagship projects?",
-    answer: "Bipin has engineered 6 notable projects, spearheaded by the Agentic FacilityOps AI Platform (an autonomous multi-agent building intelligence system deployed at facilityops-platform.vercel.app) and SwasthyaAI (a healthcare machine learning diabetes risk predictor live on Streamlit). He has also built RAG-powered document retrieval engines, hybrid recommendation algorithms, and customer churn prediction dashboards.",
+    answer: "Bipin has engineered two production platforms: the Agentic FacilityOps AI Platform (an autonomous multi-agent building intelligence system deployed at facilityops-platform.vercel.app) and SwasthyaAI: Diabetes Risk Predictor (a healthcare machine learning diagnostic tool live on Streamlit at diabetes-predictor-muqth3gs8dfgsg9ea2wqz3.streamlit.app).",
   },
   {
     question: "What internships and credentials does Bipin hold?",

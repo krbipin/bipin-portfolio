@@ -57,7 +57,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
     notFound();
   }
 
-  // Find next project for quick navigation
+  // Toggle between the 2 projects
   const currentIndex = PROJECTS.findIndex((p) => p.slug === slug);
   const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
@@ -77,11 +77,11 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       {/* Header Info */}
       <div className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-3">
-          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/30">
+          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
             {project.category}
           </span>
           {project.featured && (
-            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20 flex items-center gap-1">
+            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-200 border border-indigo-500/30 flex items-center gap-1">
               <Sparkles className="w-3 h-3" />
               Flagship Project
             </span>
@@ -91,7 +91,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
           {project.title}
         </h1>
-        <p className="text-base sm:text-xl text-cyan-400 font-medium mt-2">
+        <p className="text-base sm:text-xl text-slate-300 font-medium mt-2">
           {project.subtitle}
         </p>
 
@@ -106,7 +106,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-cyan-500 hover:brightness-110 shadow-lg shadow-indigo-500/25 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/20 transition-all"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Launch Live Application</span>
@@ -117,7 +117,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.1] hover:border-white/[0.2] transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] transition-all"
           >
             <GithubIcon className="w-4 h-4" />
             <span>View Source Code (GitHub)</span>
@@ -134,7 +134,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               className="glass-card rounded-2xl p-4 sm:p-5 text-center border border-white/[0.08]"
             >
               <div className="text-xs text-slate-400 font-medium">{m.label}</div>
-              <div className="text-xl sm:text-2xl font-bold text-white mt-1 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">
+              <div className="text-xl sm:text-2xl font-bold text-white mt-1">
                 {m.value}
               </div>
             </div>
@@ -145,19 +145,19 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       {/* PROBLEM & SOLUTION SECTION */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
         {/* Problem Card */}
-        <div className="glass-card rounded-2xl p-6 sm:p-7 border border-red-500/20 bg-red-950/[0.05]">
-          <div className="flex items-center gap-2 text-red-400 font-bold text-sm uppercase tracking-wider mb-3">
-            <AlertTriangle className="w-4 h-4" />
-            <span>The Problem</span>
+        <div className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08]">
+          <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm uppercase tracking-wider mb-3">
+            <AlertTriangle className="w-4 h-4 text-indigo-400" />
+            <span>The Challenge</span>
           </div>
           <p className="text-slate-300 text-sm leading-relaxed">{project.problem}</p>
         </div>
 
         {/* Solution Card */}
-        <div className="glass-card rounded-2xl p-6 sm:p-7 border border-emerald-500/20 bg-emerald-950/[0.05]">
-          <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm uppercase tracking-wider mb-3">
-            <Lightbulb className="w-4 h-4" />
-            <span>The Solution</span>
+        <div className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08]">
+          <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm uppercase tracking-wider mb-3">
+            <Lightbulb className="w-4 h-4 text-indigo-400" />
+            <span>The Solution Architecture</span>
           </div>
           <p className="text-slate-300 text-sm leading-relaxed">{project.solution}</p>
         </div>
@@ -184,7 +184,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
       {/* KEY FEATURES */}
       <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/[0.08] my-10">
-        <div className="flex items-center gap-2 text-cyan-400 font-bold text-sm uppercase tracking-wider mb-4">
+        <div className="flex items-center gap-2 text-indigo-400 font-bold text-sm uppercase tracking-wider mb-4">
           <Bot className="w-4 h-4" />
           <span>Key Engineered Features</span>
         </div>
@@ -195,7 +195,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               key={idx}
               className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05] flex items-start gap-2.5"
             >
-              <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
               <span className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 {feat}
               </span>
@@ -206,7 +206,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
       {/* TECH STACK BREAKDOWN */}
       <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/[0.08] my-10">
-        <div className="flex items-center gap-2 text-purple-400 font-bold text-sm uppercase tracking-wider mb-6">
+        <div className="flex items-center gap-2 text-indigo-400 font-bold text-sm uppercase tracking-wider mb-6">
           <Layers className="w-4 h-4" />
           <span>Technology Stack Breakdown</span>
         </div>
@@ -234,7 +234,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
       {/* REAL WORLD IMPACT */}
       <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/[0.08] my-10">
-        <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm uppercase tracking-wider mb-4">
+        <div className="flex items-center gap-2 text-indigo-400 font-bold text-sm uppercase tracking-wider mb-4">
           <BarChart className="w-4 h-4" />
           <span>Measurable Results & Impact</span>
         </div>
@@ -242,14 +242,14 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
         <div className="space-y-3">
           {project.impact.map((imp, idx) => (
             <div key={idx} className="flex items-start gap-2.5 text-sm text-slate-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
               <span className="leading-relaxed">{imp}</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* NEXT PROJECT FOOTER NAVIGATION */}
+      {/* FOOTER NAVIGATION */}
       <div className="mt-14 pt-8 border-t border-white/[0.08] flex items-center justify-between">
         <Link
           href="/projects"
@@ -260,9 +260,9 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
         <Link
           href={`/projects/${nextProject.slug}`}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
         >
-          <span>Next Project: {nextProject.title}</span>
+          <span>Switch Project: {nextProject.title}</span>
           <span>→</span>
         </Link>
       </div>

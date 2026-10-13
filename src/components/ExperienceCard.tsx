@@ -19,7 +19,7 @@ export function ExperienceCard({ exp }: { exp: Experience }) {
           <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
             {exp.role}
           </h3>
-          <p className="text-base font-semibold text-cyan-400 mt-0.5">
+          <p className="text-base font-semibold text-slate-200 mt-0.5">
             {exp.organization}
           </p>
           {exp.partnerInfo && (
@@ -47,10 +47,10 @@ export function ExperienceCard({ exp }: { exp: Experience }) {
             href={exp.credentialUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-500/10 border border-emerald-500/30 hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all shadow-sm shadow-emerald-500/10"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-indigo-300 bg-indigo-500/10 border border-indigo-500/30 hover:bg-indigo-500/20 hover:border-indigo-500/50 transition-all shadow-sm"
           >
-            <Award className="w-3.5 h-3.5 text-emerald-400" />
-            <span>View Certificate / Credential</span>
+            <Award className="w-3.5 h-3.5 text-indigo-400" />
+            <span>View Verified Credential</span>
             <ExternalLink className="w-3 h-3 opacity-80" />
           </a>
         </div>
@@ -64,7 +64,7 @@ export function ExperienceCard({ exp }: { exp: Experience }) {
       <div className="space-y-2 mb-6">
         {exp.highlights.map((highlight, idx) => (
           <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
-            <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+            <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
             <span className="leading-relaxed">{highlight}</span>
           </div>
         ))}
