@@ -67,7 +67,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       <div className="mb-8">
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors group"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-400 hover:text-white transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Projects</span>
@@ -77,25 +77,25 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       {/* Header Info */}
       <div className="mb-10">
         <div className="flex flex-wrap items-center gap-2 mb-3">
-          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700/60">
             {project.category}
           </span>
           {project.featured && (
-            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-200 border border-indigo-500/30 flex items-center gap-1">
-              <Sparkles className="w-3 h-3" />
+            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-950/80 text-indigo-300 border border-indigo-700/40 flex items-center gap-1">
+              <Sparkles className="w-3 h-3 text-indigo-400" />
               Flagship Project
             </span>
           )}
         </div>
 
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight leading-tight">
           {project.title}
         </h1>
-        <p className="text-base sm:text-xl text-slate-300 font-medium mt-2">
+        <p className="text-base sm:text-xl text-zinc-300 font-medium mt-2">
           {project.subtitle}
         </p>
 
-        <p className="text-slate-300 text-base sm:text-lg mt-6 leading-relaxed">
+        <p className="text-zinc-300 text-base sm:text-lg mt-6 leading-relaxed">
           {project.overview}
         </p>
 
@@ -106,7 +106,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-600/20 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-all"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Launch Live Application</span>
@@ -117,7 +117,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-slate-200 bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-200 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 transition-all"
           >
             <GithubIcon className="w-4 h-4" />
             <span>View Source Code (GitHub)</span>
@@ -133,8 +133,8 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
               key={idx}
               className="glass-card rounded-2xl p-4 sm:p-5 text-center border border-white/[0.08]"
             >
-              <div className="text-xs text-slate-400 font-medium">{m.label}</div>
-              <div className="text-xl sm:text-2xl font-bold text-white mt-1">
+              <div className="text-xs text-zinc-400 font-medium">{m.label}</div>
+              <div className="text-xl sm:text-2xl font-heading font-extrabold text-white mt-1">
                 {m.value}
               </div>
             </div>
@@ -146,20 +146,20 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
         {/* Problem Card */}
         <div className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08]">
-          <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm uppercase tracking-wider mb-3">
+          <div className="flex items-center gap-2 text-zinc-200 font-bold text-sm uppercase tracking-wider mb-3">
             <AlertTriangle className="w-4 h-4 text-indigo-400" />
             <span>The Challenge</span>
           </div>
-          <p className="text-slate-300 text-sm leading-relaxed">{project.problem}</p>
+          <p className="text-zinc-300 text-sm leading-relaxed">{project.problem}</p>
         </div>
 
         {/* Solution Card */}
         <div className="glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08]">
-          <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm uppercase tracking-wider mb-3">
+          <div className="flex items-center gap-2 text-zinc-200 font-bold text-sm uppercase tracking-wider mb-3">
             <Lightbulb className="w-4 h-4 text-indigo-400" />
             <span>The Solution Architecture</span>
           </div>
-          <p className="text-slate-300 text-sm leading-relaxed">{project.solution}</p>
+          <p className="text-zinc-300 text-sm leading-relaxed">{project.solution}</p>
         </div>
       </div>
 
@@ -172,8 +172,8 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
         <div className="space-y-4">
           {project.architecture.map((step, idx) => (
-            <div key={idx} className="flex items-start gap-3 text-sm text-slate-300">
-              <span className="w-6 h-6 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+            <div key={idx} className="flex items-start gap-3.5 text-sm text-zinc-300">
+              <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                 {idx + 1}
               </span>
               <p className="leading-relaxed">{step}</p>
@@ -193,10 +193,10 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
           {project.keyFeatures.map((feat, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.05] flex items-start gap-2.5"
+              className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800 flex items-start gap-2.5"
             >
               <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
-              <span className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <span className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
                 {feat}
               </span>
             </div>
@@ -214,14 +214,14 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {project.techStack.map((stack, idx) => (
             <div key={idx} className="space-y-2">
-              <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
+              <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider">
                 {stack.category}
               </h4>
               <div className="flex flex-wrap gap-1.5">
                 {stack.items.map((item, i) => (
                   <span
                     key={i}
-                    className="text-xs px-2.5 py-1 rounded-lg bg-white/[0.04] text-slate-200 border border-white/[0.08]"
+                    className="text-xs px-2.5 py-1 rounded-lg bg-zinc-900 text-zinc-300 border border-zinc-800"
                   >
                     {item}
                   </span>
@@ -241,7 +241,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
 
         <div className="space-y-3">
           {project.impact.map((imp, idx) => (
-            <div key={idx} className="flex items-start gap-2.5 text-sm text-slate-300">
+            <div key={idx} className="flex items-start gap-2.5 text-sm text-zinc-300">
               <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
               <span className="leading-relaxed">{imp}</span>
             </div>
@@ -253,7 +253,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
       <div className="mt-14 pt-8 border-t border-white/[0.08] flex items-center justify-between">
         <Link
           href="/projects"
-          className="text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+          className="text-sm font-semibold text-zinc-400 hover:text-white transition-colors"
         >
           ← All Projects
         </Link>

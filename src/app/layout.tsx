@@ -192,7 +192,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftware) }}
         />
       </head>
-      <body className="bg-[#07090e] text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-500/30 selection:text-white">
+      <body className="bg-[#09090b] text-zinc-100 min-h-screen flex flex-col font-sans selection:bg-indigo-600/30 selection:text-white antialiased">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

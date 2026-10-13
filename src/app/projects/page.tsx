@@ -17,10 +17,10 @@ export default function ProjectsPage() {
           <Bot className="w-3.5 h-3.5" />
           <span>Production Engineering</span>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+        <h1 className="text-3xl sm:text-5xl font-heading font-extrabold text-white tracking-tight">
           Flagship <span className="gradient-text-primary">AI & ML Platforms</span>
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-400 leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-zinc-400 leading-relaxed font-normal">
           In-depth architectural breakdowns of production-grade systems engineered from scratch.
           Each project features live deployments, verifiable metrics, and complete source code.
         </p>
