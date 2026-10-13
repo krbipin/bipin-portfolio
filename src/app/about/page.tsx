@@ -46,7 +46,8 @@ export default function AboutPage() {
                   src="/profile.jpg"
                   alt="Bipin Kumar"
                   fill
-                  className="object-cover"
+                  priority
+                  className="object-cover object-center"
                   sizes="144px"
                 />
               </div>
