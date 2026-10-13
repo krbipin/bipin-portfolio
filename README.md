@@ -1,6 +1,6 @@
 # Bipin Kumar — Portfolio & Personal Platform
 
-[![Live Demo](https://img.shields.io/badge/Live-Portfolio-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://bipin-portfolio.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Portfolio-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://bipin-kr.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-16.4-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS_v4-38bdf8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)

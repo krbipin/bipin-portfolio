@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { PROJECTS } from "@/data/portfolio-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://bipin-portfolio.vercel.app";
+  const baseUrl = "https://bipin-kr.vercel.app";
   const currentDate = "2026-10-13T00:00:00.000Z";
 
   const staticRoutes = [

@@ -9,7 +9,7 @@
 - Email: bipinkumarkataroo6201@gmail.com
 - LinkedIn: https://www.linkedin.com/in/bipinkr
 - GitHub: https://github.com/krbipin
-- Direct Resume Viewer: https://bipin-portfolio.vercel.app/resume
+- Direct Resume Viewer: https://bipin-kr.vercel.app/resume
 
 ## 2. Technical Philosophy & Stack
 - Machine Learning & Deep Learning: Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM, ONNX Runtime, Hugging Face Transformers.

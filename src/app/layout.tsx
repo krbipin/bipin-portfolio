@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bipin-portfolio.vercel.app"),
+  metadataBase: new URL("https://bipin-kr.vercel.app"),
   title: {
     default: "Bipin Kumar | Data Science & AI/ML Engineer | Portfolio",
     template: "%s | Bipin Kumar — Portfolio",
@@ -40,10 +40,9 @@ export const metadata: Metadata = {
     "LangChain RAG Systems",
     "FastAPI Machine Learning",
     "Scikit-learn",
-    "TensorFlow",
     "Next.js AI Portfolio",
   ],
-  authors: [{ name: "Bipin Kumar", url: "https://bipin-portfolio.vercel.app" }],
+  authors: [{ name: "Bipin Kumar", url: "https://bipin-kr.vercel.app" }],
   creator: "Bipin Kumar",
   publisher: "Bipin Kumar",
   robots: {
@@ -58,12 +57,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://bipin-portfolio.vercel.app",
+    canonical: "https://bipin-kr.vercel.app",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bipin-portfolio.vercel.app",
+    url: "https://bipin-kr.vercel.app",
     title: "Bipin Kumar | Data Science & AI/ML Engineer | Portfolio",
     description:
       "Data Science & AI/ML Engineer with production expertise in autonomous agent architectures, predictive ML pipelines, and full-stack AI platforms.",
@@ -86,10 +85,7 @@ export const metadata: Metadata = {
     creator: "@krbipin",
   },
   verification: {
-    google: "google-site-verification-token",
-    other: {
-      "msvalidate.01": "bing-site-verification-token",
-    },
+    google: "Gc4mGa7rCu7pfbCjPmmz0c6nbocU3v--LiCUUwRxfwY",
   },
 };
 
@@ -101,12 +97,12 @@ export default function RootLayout({
   const jsonLdPerson = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://bipin-portfolio.vercel.app/#person",
+    "@id": "https://bipin-kr.vercel.app/#person",
     name: PERSONAL_INFO.name,
     jobTitle: PERSONAL_INFO.title,
     description: PERSONAL_INFO.bio,
-    url: "https://bipin-portfolio.vercel.app",
-    image: "https://bipin-portfolio.vercel.app/profile.jpg",
+    url: "https://bipin-kr.vercel.app",
+    image: "https://bipin-kr.vercel.app/profile.jpg",
     email: PERSONAL_INFO.email,
     birthPlace: {
       "@type": "Place",
@@ -165,9 +161,9 @@ export default function RootLayout({
       operatingSystem: "Web",
       description: proj.description,
       author: {
-        "@id": "https://bipin-portfolio.vercel.app/#person",
+        "@id": "https://bipin-kr.vercel.app/#person",
       },
-      url: proj.liveUrl || "https://bipin-portfolio.vercel.app/projects/" + proj.slug,
+      url: proj.liveUrl || "https://bipin-kr.vercel.app/projects/" + proj.slug,
       codeRepository: proj.githubUrl,
     })),
   };

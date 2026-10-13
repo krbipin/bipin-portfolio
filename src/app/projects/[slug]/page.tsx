@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${project.title} — Bipin Kumar Case Study`,
       description: project.description,
-      url: `https://bipin-portfolio.vercel.app/projects/${project.slug}`,
+      url: `https://bipin-kr.vercel.app/projects/${project.slug}`,
     },
   };
 }

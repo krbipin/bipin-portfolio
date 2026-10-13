@@ -10,8 +10,8 @@
 - **Email**: bipinkumarkataroo6201@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/bipinkr
 - **GitHub**: https://github.com/krbipin
-- **Portfolio**: https://bipin-portfolio.vercel.app
-- **Resume**: https://bipin-portfolio.vercel.app/resume
+- **Portfolio**: https://bipin-kr.vercel.app
+- **Resume**: https://bipin-kr.vercel.app/resume
 
 ## Flagship Production Platforms
 1. **Agentic FacilityOps AI Platform**:
