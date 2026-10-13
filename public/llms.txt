@@ -1,0 +1,48 @@
+# Bipin Kumar - Data Science & AI/ML Engineer
+
+> Data Science & AI/ML Engineer specializing in Autonomous Agent Architectures, Predictive ML, and End-to-End AI Integrations.
+
+- **Name**: Bipin Kumar
+- **Role**: Data Science Engineer | AI/ML Developer | Data Analytics | AI Integration
+- **Education**: B.Tech in Computer Science & Engineering (2023–2027), Jagannath University, Jaipur (CGPA: 7.4)
+- **Current Location**: Jaipur, Rajasthan, India
+- **Origin**: Muzaffarpur, Bihar, India
+- **Email**: bipinkumarkataroo6201@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/bipinkr
+- **GitHub**: https://github.com/krbipin
+- **Portfolio**: https://bipin-portfolio.vercel.app
+
+## Flagship Projects
+1. **Agentic FacilityOps AI Platform**:
+   - Description: Enterprise autonomous multi-agent building intelligence system monitoring energy, maintenance, occupancy, and cost with 1-minute streaming telemetry.
+   - Stack: Next.js 16, FastAPI, PostgreSQL (Neon), Scikit-Learn, Pandas, Groq LLM, Clerk.
+   - Live: https://facilityops-platform.vercel.app
+   - GitHub: https://github.com/krbipin/Agentic-FacilityOps-AI-Platform
+
+2. **SwasthyaAI: Diabetes Risk Predictor**:
+   - Description: Healthcare machine learning diagnostic system evaluating 8 clinical parameters with zero-latency inference.
+   - Stack: Python, Scikit-learn, Streamlit, NumPy, StandardScaler.
+   - Live: https://diabetes-predictor-muqth3gs8dfgsg9ea2wqz3.streamlit.app/
+   - GitHub: https://github.com/krbipin/diabetes-predictor
+
+3. **RAG-Powered Document Q&A System**:
+   - Stack: LangChain, ChromaDB, Sentence Transformers, Groq LLM, FastAPI, React.
+   - Latency: <300ms semantic search across multi-format documents.
+
+4. **Hybrid Movie Recommendation System**:
+   - Stack: Scikit-learn, SVD Matrix Factorization, TF-IDF, React, Node.js, Express, MongoDB.
+   - Metrics: Evaluated on MovieLens 1M dataset, achieving 0.87 RMSE.
+
+5. **Customer Churn Prediction Dashboard**:
+   - Stack: XGBoost, SMOTE, SHAP Values, FastAPI, Streamlit, React.
+   - Metrics: 92% AUC-ROC with local and global explainability.
+
+6. **Real-Time Sentiment Analysis Pipeline**:
+   - Stack: HuggingFace BERT, PyTorch, ONNX Runtime (3x inference acceleration), Express, React.
+   - Metrics: 91% F1-score.
+
+## Verified Credentials & Internships
+- **1M1B & AICTE & IBM SkillsBuild**: AI for Sustainability Virtual Internship (Jul 2026 – Sep 2026, ID: INTERNSHIP_17828984086a44dee80acf6)
+- **Edunet Foundation & AICTE & IBM SkillsBuild**: Artificial Intelligence Intern (May 2026 – Jun 2026, ID: STU681afa946eb801746598548)
+- **CodeWithHarry**: Data Science Trainee Certification (Sep 2025)
+- **Udemy**: Complete 2025 Python Bootcamp (Sep 2025)

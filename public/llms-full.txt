@@ -1,0 +1,56 @@
+# Complete Technical Knowledge Base: Bipin Kumar
+
+## 1. Identity & Contact Details
+- Full Name: Bipin Kumar
+- Core Specialization: Data Science Engineer, AI/ML Developer, Data Analytics, AI Integration
+- University: Jagannath University, Jaipur | Course: B.Tech Computer Science & Engineering (2023–2027) | CGPA: 7.4 / 10.0
+- University URL: https://www.jagannathuniversity.org/
+- Locations: Jaipur, Rajasthan (Current) | Muzaffarpur, Bihar (Origin)
+- Email: bipinkumarkataroo6201@gmail.com
+- LinkedIn: https://www.linkedin.com/in/bipinkr
+- GitHub: https://github.com/krbipin
+- Direct Resume Viewer: https://bipin-portfolio.vercel.app/resume
+
+## 2. Technical Philosophy & Stack
+- Machine Learning & Deep Learning: Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM, ONNX Runtime, Hugging Face Transformers.
+- Agentic AI & RAG: LangChain, LlamaIndex, ChromaDB, FAISS, Sentence Transformers, Groq LLM, OpenAI API.
+- Data Engineering & Analytics: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Power BI, Advanced Excel, SMOTE, SHAP Values.
+- Full-Stack & APIs: FastAPI, React.js, Next.js (App Router), Node.js, Express.js, Tailwind CSS, Streamlit.
+- Databases & Infrastructure: PostgreSQL (Neon), MongoDB Atlas, SQLAlchemy 2, Docker, Git/GitHub, Vercel, Render.
+
+## 3. Flagship Projects In-Depth
+### Project 1: Agentic FacilityOps AI Platform
+- Live URL: https://facilityops-platform.vercel.app/
+- Source Code: https://github.com/krbipin/Agentic-FacilityOps-AI-Platform
+- Architecture: Autonomous multi-agent building intelligence platform with Next.js 16 frontend, FastAPI microservice backend, PostgreSQL Neon database, and Groq LLM Facility Copilot.
+- Agents: 8 autonomous modules (Energy, Maintenance, Occupancy, Security, Cost, Intelligence, Alerts, Executive Reporting).
+- Telemetry: Live 1-minute streaming sensor telemetry with real-time recalculation of health metrics.
+- Models: RandomForest risk scoring for equipment degradation and IsolationForest for real-time anomaly detection.
+
+### Project 2: SwasthyaAI: Diabetes Risk Predictor
+- Live URL: https://diabetes-predictor-muqth3gs8dfgsg9ea2wqz3.streamlit.app/
+- Source Code: https://github.com/krbipin/diabetes-predictor
+- Architecture: Public health diagnostic machine learning tool trained on 8 clinical features (pregnancies, glucose, blood pressure, skin thickness, insulin, BMI, pedigree function, age).
+- Implementation: Standardized scaling pipeline with serialized (.sav) models running with <150ms inference on Streamlit.
+
+### Project 3: RAG-Powered Document Q&A System
+- Vector Store: ChromaDB with HNSW indexing and Sentence Transformers embeddings.
+- Pipeline: Sub-300ms retrieval-augmented generation powered by Groq LLM with strict context grounding.
+
+### Project 4: Hybrid Movie Recommendation System
+- Algorithms: Hybrid collaborative filtering (Truncated SVD matrix factorization) + content-based filtering (TF-IDF cosine similarity) on MovieLens 1M dataset.
+- Evaluation: Achieved 0.87 RMSE.
+
+### Project 5: Customer Churn Prediction Dashboard
+- Models: XGBoost classifier with SMOTE oversampling and TreeSHAP explainability.
+- Performance: 92% AUC-ROC score on telecom churn benchmark.
+
+### Project 6: Real-Time Sentiment Analysis Pipeline
+- Model: Fine-tuned BERT (bert-base-uncased) achieving 91% F1-score.
+- Acceleration: ONNX Runtime export providing 3x CPU inference speedup.
+
+## 4. Verified Experience & Credentials
+1. 1M1B (One Million for One Billion) × AICTE × IBM SkillsBuild: AI for Sustainability Virtual Internship (Jul 2026 – Sep 2026). Credential ID: INTERNSHIP_17828984086a44dee80acf6.
+2. Edunet Foundation × AICTE × IBM SkillsBuild: Artificial Intelligence Intern (May 2026 – Jun 2026). Student ID: STU681afa946eb801746598548.
+3. CodeWithHarry: The Ultimate Job Ready Data Science Course (Sep 2025).
+4. Udemy: Complete 2025 Python Bootcamp by Haris Ali Khan (Sep 2025).
