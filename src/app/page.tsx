@@ -50,32 +50,34 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.1]">
-          Building Intelligent Systems With{" "}
-          <span className="gradient-text-primary">Agentic AI & ML</span>
+        {/* Headline: Name First */}
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.08]">
+          Bipin Kumar
         </h1>
 
-        {/* Subtitle / Role specialization */}
-        <p className="mt-6 text-base sm:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed font-normal">
-          Hi, I&apos;m <strong className="text-white font-semibold">Bipin Kumar</strong>. I engineer
-          autonomous multi-agent platforms, scalable predictive machine learning pipelines, and
-          high-performance data-driven applications.
+        {/* Professional Role & Title */}
+        <p className="mt-3 text-xl sm:text-2xl font-heading font-semibold text-zinc-200 tracking-tight">
+          Data Science & AI/ML Engineer
         </p>
 
-        {/* Core domains badges */}
+        {/* Executive Professional Description */}
+        <p className="mt-5 text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed font-normal">
+          Engineering autonomous multi-agent intelligence platforms, scalable predictive machine learning pipelines, and production data-driven web applications. Specializing in bridging mathematical modeling with real-time operational cloud deployments.
+        </p>
+
+        {/* Core domains badges aligned to the 2 flagship platforms */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-2 max-w-xl mx-auto">
           <span className="px-3 py-1 rounded-lg bg-zinc-900 text-zinc-300 border border-zinc-800 text-xs font-medium">
-            Agentic AI & RAG
+            Agentic AI & Telemetry (8 Agents)
           </span>
           <span className="px-3 py-1 rounded-lg bg-zinc-900 text-zinc-300 border border-zinc-800 text-xs font-medium">
-            Data Analytics & Predictive ML
+            Predictive ML & Diagnostic Scoring
           </span>
           <span className="px-3 py-1 rounded-lg bg-zinc-900 text-zinc-300 border border-zinc-800 text-xs font-medium">
-            AI Integration & FastAPI
+            FastAPI & Next.js 16 Microservices
           </span>
           <span className="px-3 py-1 rounded-lg bg-zinc-900 text-zinc-300 border border-zinc-800 text-xs font-medium">
-            Jagannath University, Jaipur
+            Streamlit Healthcare Diagnostics
           </span>
         </div>
 
@@ -202,7 +204,7 @@ export default function HomePage() {
             Specialized Tech Stack
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base mt-2">
-            Tooling tailored for rapid experimentation, robust ML modeling, and production-grade deployment.
+            Tooling verified through production deployments across the Agentic FacilityOps AI Platform and SwasthyaAI.
           </p>
         </div>
 
@@ -213,10 +215,10 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-heading font-bold text-white mb-2">Agentic AI & LLMs</h3>
             <p className="text-xs text-zinc-400 mb-4 leading-relaxed">
-              Multi-agent orchestration, RAG architectures, and vector embeddings.
+              Multi-agent orchestration, Groq LLM API, and live sensor telemetry decisioning.
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {["LangChain", "ChromaDB", "Groq LLM", "OpenAI API", "Sentence Transformers"].map((s, i) => (
+              {["Groq LLM (Llama 3.3)", "8-Agent Architecture", "Prompt Engineering", "RAG Grounding", "Telemetry Logic"].map((s, i) => (
                 <span key={i} className="text-xs px-2.5 py-1 rounded bg-zinc-900 text-zinc-300 border border-zinc-800">
                   {s}
                 </span>
@@ -230,10 +232,10 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-heading font-bold text-white mb-2">Machine Learning</h3>
             <p className="text-xs text-zinc-400 mb-4 leading-relaxed">
-              Supervised/unsupervised algorithms, hyperparameter tuning, and XAI.
+              Supervised classification, anomaly detection, normalization, and evaluation metrics.
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {["Scikit-learn", "XGBoost", "RandomForest", "SHAP", "SMOTE", "ONNX"].map((s, i) => (
+              {["Scikit-learn", "RandomForest", "IsolationForest", "StandardScaler", "Logistic Regression", "Pickle / Joblib"].map((s, i) => (
                 <span key={i} className="text-xs px-2.5 py-1 rounded bg-zinc-900 text-zinc-300 border border-zinc-800">
                   {s}
                 </span>
@@ -247,10 +249,10 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-heading font-bold text-white mb-2">Data & Analytics</h3>
             <p className="text-xs text-zinc-400 mb-4 leading-relaxed">
-              EDA, statistical hypothesis testing, data wrangling, and BI dashboards.
+              Tabular data engineering, feature transformation, and diagnostic statistical plotting.
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "SQL"].map((s, i) => (
+              {["Python 3.12+", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Diagnostic EDA"].map((s, i) => (
                 <span key={i} className="text-xs px-2.5 py-1 rounded bg-zinc-900 text-zinc-300 border border-zinc-800">
                   {s}
                 </span>
@@ -264,10 +266,10 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-heading font-bold text-white mb-2">Full-Stack & APIs</h3>
             <p className="text-xs text-zinc-400 mb-4 leading-relaxed">
-              High-throughput asynchronous APIs and responsive reactive client UIs.
+              High-throughput asynchronous APIs, relational cloud DBs, and reactive client UIs.
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {["FastAPI", "Next.js", "React.js", "PostgreSQL", "MongoDB", "Streamlit"].map((s, i) => (
+              {["FastAPI", "Next.js 16", "React 19", "Streamlit", "PostgreSQL (Neon)", "Tailwind CSS"].map((s, i) => (
                 <span key={i} className="text-xs px-2.5 py-1 rounded bg-zinc-900 text-zinc-300 border border-zinc-800">
                   {s}
                 </span>
@@ -281,7 +283,7 @@ export default function HomePage() {
             href="/skills"
             className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-200 hover:text-white px-5 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-750 hover:border-zinc-600 transition-all active:scale-[0.98]"
           >
-            <span>Explore All 30+ Skills & Tooling</span>
+            <span>Explore All 24+ Verified Technologies</span>
             <ArrowRight className="w-4 h-4 text-zinc-400" />
           </Link>
         </div>

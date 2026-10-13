@@ -31,8 +31,8 @@ export default function SkillsPage() {
           Technical <span className="gradient-text-primary">Skills Matrix</span>
         </h1>
         <p className="mt-4 text-base sm:text-lg text-zinc-400 leading-relaxed">
-          A structured breakdown of languages, frameworks, AI agent libraries, and engineering tools
-          applied across my production projects and research pipelines.
+          A structured breakdown of languages, machine learning frameworks, AI agent architectures, and full-stack tools
+          verified through production deployments in the Agentic FacilityOps AI Platform and SwasthyaAI.
         </p>
       </div>
 
